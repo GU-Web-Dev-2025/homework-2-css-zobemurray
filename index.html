@@ -1,0 +1,270 @@
+<!-- 
+ Name: Zobe Murray
+Class: CPSC 332
+Assignment: HW2
+Last Modified: 9/24/25
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="icon" href="zm-favicon.png">
+    <!-- Imbedded Styling for All Sections -->
+    <style> 
+        nav {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(21, 69, 21);
+            height: 70px;
+        }
+        div {
+            border: 2px solid black;
+            padding: 10px;
+            
+        }
+
+        a {
+            color: white;
+            font-weight: bold;
+        }
+
+        img {
+            border: 2px solid black;
+            display: block; 
+            margin: auto; 
+            width: 25%;
+        }
+        /*Navigation Image*/
+        nav img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        table {
+            border: 1px solid black; 
+            border-collapse: collapse;
+        }
+
+        caption {
+            border: 1px solid black; 
+            padding: 8px;
+            background-color: rgb(21, 69, 21);
+            color: white;
+        }
+
+        tr {
+            border: 1px solid black; 
+            padding: 8px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgba(179, 214, 179, 0.562);
+        }
+
+         tr:nth-child(even) {
+            background-color: rgba(132, 179, 132, 0.176);
+        }
+
+        th {
+            border: 1px solid black; 
+            padding: 8px;
+        }
+
+        td {
+            border: 1px solid black; 
+            padding: 8px;
+        }
+        /*Flex box for the two sides of the webpage*/
+        .flex-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        /*Left side of the page*/
+        .introduction {
+            background-color: rgb(90, 148, 90);
+            flex: 0 1 30%;
+        }
+
+        .headshot {
+            width: 150px;
+            height: auto;
+        }
+        /*Right side of the page*/
+        .main-content {
+            flex: 0 1 70%;
+        }
+
+        .education-table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation HTML-->
+    <nav>
+        <!-- Navigation image-->
+        <img src="Grand-teton-img.jpg" alt="Zobe Murray posed in front of Grand Teton mountain range">
+        <a href="#Introduction">Introduction</a>
+        <a href="#career-summary">Career Summary</a>
+        <a href="#education-and-qualifications">Education and Qualifications</a>
+        <a href="#interests-and-hobbies">Interests and Hobbies</a>
+    </nav>
+    <!-- Flex box for the entire page-->
+    <div class="flex-box">
+        <!-- Introduction half of page-->
+        <div class="introduction">
+            <h1>Introduction</h1>
+            <!-- Headshot image-->
+            <img src="Headshot.JPG" alt="Zobe Murray headshot" class="headshot">
+            <h2> Zobe Murray</h2>
+            <h4>Informatics Assistant with Gonzaga IIAT</h4>
+            <h2>Summary Paragraph</h2>
+            <p>Welcome to my website! I am a senior computer science at Gonzaga University
+                with a passion for learning and exploring. Look around my website to learn about
+                my interests, experience, and career!
+            </p>
+
+            
+        </div>
+        <!-- Main content half of page-->
+        <div class="main-content">
+            <h1>Main Content</h1>
+            <div class="career-summary">
+                <h2>Career Summary</h2>
+                <!--Career Summary Table-->
+                <table>
+                    <caption>Work Experience</caption>
+                    <tr>
+                        <th>Title</th>
+                        <th>Position</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Institute for Informatics and Applied Technology – GU</td>
+                        <td>Research Assistant</td>
+                        <td>June-August 2025</td>
+                        <td>
+                            Collaborated with Professor Doug Addleman to implement VGG16 and 
+                            ResNet50 convolutional neural network models to calculate and 
+                            analyze image similarities. 
+                        </td>
+                    </tr>
+       
+                    <tr>
+                        <td>Biology Department – GU</td>
+                        <td>Research Assistant </td>
+                        <td>January – September 2024</td>
+                        <td>
+                            Collaborated with Professor Christy Andrade on a 
+                            next-generation sequencing (NGS) project to analyze microbial 
+                            communities in mosquito larvae and their aquatic environments.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Knight Cancer Research Institute – OHSU</td>
+                        <td>Research Intern</td>
+                        <td>June-August 2024</td>
+                        <td>Built a microbiome analysis pipeline to assess the mycobiome 
+                            in patients with head and neck cancer, enabling detailed data 
+                            processing and visualization.
+                        </td>
+                    </tr>
+                </table>
+
+                <div>
+                    <!--Core Skills List-->
+                    <h2>Core Skills</h2>
+                    <ul>
+                        <li><strong>C++, Java, Python, R, SQL, Some HTML</strong>
+                            – Languages that I have learned throughout my academics and work experience</li>
+                        <li><strong>Google Colab, VS Code, IntelliJ, R Studio, Git (GitHub), Microsoft SQL Server, Docker, Microsoft Office</strong>
+                            – Systems/Applications I have experience using</li>
+                        <li>Strong leadership, time management, teamwork, attention to detail, and excellent communicator both written and verbal</li>
+                    </ul>
+                    <p>To learn more about my education click <a href="education.html#education" >here</a></p>
+                </div>
+            </div>
+            <div class="education-and-qualifications">
+                <h2>Education and Qualifications</h2>
+                <!--Education Table-->
+                <table class="education-table">
+                    <caption>Education</caption>
+                    <tr>
+                        <th>School</th>
+                        <th>Date</th>
+                        <th>Earned</th>
+                        </tr>
+                    <tr>
+                        <td>Bothell High School</td>
+                        <td>2018-2022</td>
+                        <td>High School Diploma</td>
+                    </tr>
+                    <tr>
+                        <td>Cascadia College</td>
+                        <td>2021-2022</td>
+                        <td>College Credit</td>
+                    </tr>
+                    <tr>
+                        <td>Unversity Of Washington</td>
+                        <td>2020-2021</td>
+                        <td>College Credit</td>
+                    </tr>
+                    <tr>
+                        <td>Gonzaga University</td>
+                        <td>2022-Present</td>
+                        <td>BS in Computer Science</td>
+                    </tr>
+                </table>
+                <br><br>
+                <!--Additional Experience Table-->
+                <table>
+                    <caption>Additional Qualifications</caption>
+                    <tr>
+                        <th>Title</th>
+                        <th>Position</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Data Science - GU</td>
+                        <td>Teaching Assistant</td>
+                        <td>September – December 2024</td>
+                        <td>
+                            Providing tutoring to students, helping them understand core data science concepts. 
+                            Grade assignments and provide feedback to improve student comprehension and performance.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Center for Community Engagement - GU</td>
+                        <td>Administrative Assistant</td>
+                        <td>September 2023– Present</td>
+                        <td>Supporting the CCE, local community organizations, and volunteers, demonstrating strong written and verbal communication skills.
+                            Utilizing Microsoft Office Suit (Word, PowerPoint, Teams, and Excel) to create spreadsheets, presentations, group communication, 
+                            and reports, showcasing proficiency in office software.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="interests-and-hobbies">
+                <h2>Interests and Hobbies</h2>
+                <a href="https://www.imdb.com/title/tt0452046/" target="_blank" rel="noopener noreferrer"><img style="display: block; margin: auto; width: 25%;" src="crime.jpg" alt="crime scene tape with link to Ciminal Minds IMDb page"></a>
+                <ul>
+                    <li>True Crime Shows (Criminal Minds)</li>
+                    <li>Cross-disipline computer science research projects</li>
+                    <li>Generative AI</li>
+                    <li>Reading</li>
+                    <li>Watching sports</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
