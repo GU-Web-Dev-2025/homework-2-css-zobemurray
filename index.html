@@ -17,7 +17,17 @@ Last Modified: 9/24/25
             border: 2px solid black;
             padding: 10px;
             background-color: rgb(21, 69, 21);
-            height: 70px;
+            height: 50px;
+        }
+
+        nav a {
+            font-size: 20px;
+            text-decoration: none;
+            padding-left: 3px;
+        }
+
+        h1 {
+            color: white
         }
         div {
             border: 2px solid black;
@@ -28,6 +38,7 @@ Last Modified: 9/24/25
         a {
             color: white;
             font-weight: bold;
+
         }
 
         img {
@@ -79,6 +90,7 @@ Last Modified: 9/24/25
             border: 1px solid black; 
             padding: 8px;
         }
+
         /*Flex box for the two sides of the webpage*/
         .flex-box {
             display: flex;
@@ -89,8 +101,12 @@ Last Modified: 9/24/25
         .introduction {
             background-color: rgb(90, 148, 90);
             flex: 0 1 30%;
+            color: white;
         }
 
+        .introduction h2 {
+            text-align: center;
+        }
         .headshot {
             width: 150px;
             height: auto;
@@ -98,11 +114,22 @@ Last Modified: 9/24/25
         /*Right side of the page*/
         .main-content {
             flex: 0 1 70%;
+            background-color: rgb(21, 69, 21);
         }
 
         .education-table {
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .career-summary {
+            background-color: white;
+        }
+
+        .career-summary h2 {
+            color: rgb(21, 69, 21);
+            font-weight: bold;
+            text-align: center;
         }
     </style>
 </head>
@@ -111,20 +138,20 @@ Last Modified: 9/24/25
     <nav>
         <!-- Navigation image-->
         <img src="Grand-teton-img.jpg" alt="Zobe Murray posed in front of Grand Teton mountain range">
-        <a href="#Introduction">Introduction</a>
-        <a href="#career-summary">Career Summary</a>
-        <a href="#education-and-qualifications">Education and Qualifications</a>
+        <a href="#Introduction">Introduction  |</a>
+        <a href="#career-summary">Career Summary  |</a>
+        <a href="#education-and-qualifications">Education and Qualifications  |</a>
         <a href="#interests-and-hobbies">Interests and Hobbies</a>
     </nav>
     <!-- Flex box for the entire page-->
     <div class="flex-box">
         <!-- Introduction half of page-->
         <div class="introduction">
-            <h1>Introduction</h1>
+            <h1 id="Introduction">Introduction</h1>
             <!-- Headshot image-->
             <img src="Headshot.JPG" alt="Zobe Murray headshot" class="headshot">
             <h2> Zobe Murray</h2>
-            <h4>Informatics Assistant with Gonzaga IIAT</h4>
+            <h4>Informatics Assistant -- Gonzaga IIAT</h4>
             <h2>Summary Paragraph</h2>
             <p>Welcome to my website! I am a senior computer science at Gonzaga University
                 with a passion for learning and exploring. Look around my website to learn about
@@ -137,7 +164,7 @@ Last Modified: 9/24/25
         <div class="main-content">
             <h1>Main Content</h1>
             <div class="career-summary">
-                <h2>Career Summary</h2>
+                <h2 id="career-summary">Career Summary</h2>
                 <!--Career Summary Table-->
                 <table>
                     <caption>Work Experience</caption>
@@ -193,7 +220,7 @@ Last Modified: 9/24/25
                 </div>
             </div>
             <div class="education-and-qualifications">
-                <h2>Education and Qualifications</h2>
+                <h2 id="education-and-qualifications">Education and Qualifications</h2>
                 <!--Education Table-->
                 <table class="education-table">
                     <caption>Education</caption>
@@ -254,7 +281,7 @@ Last Modified: 9/24/25
                 </table>
             </div>
             <div class="interests-and-hobbies">
-                <h2>Interests and Hobbies</h2>
+                <h2 id="interests-and-hobbies">Interests and Hobbies</h2>
                 <a href="https://www.imdb.com/title/tt0452046/" target="_blank" rel="noopener noreferrer"><img style="display: block; margin: auto; width: 25%;" src="crime.jpg" alt="crime scene tape with link to Ciminal Minds IMDb page"></a>
                 <ul>
                     <li>True Crime Shows (Criminal Minds)</li>
